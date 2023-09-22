@@ -1,0 +1,78 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding-top: 20;
+  padding-bottom: 80px;
+}
+
+/* Add border and border radius to input fields */
+.inputS,
+.inputL,
+.textArea {
+  margin-bottom: 15px;
+  border: 2px solid #ccc; /* Add border */
+  border-radius: 20px; /* Set border radius */
+}
+
+/* Add padding to inputs for spacing */
+.inputS,
+.inputL,
+.textArea {
+  padding: 10px; /* Add padding */
+}
+
+.form {
+  width: 500px;
+  height: 500px;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.inputS {
+  flex: 1;
+  height: 50px;
+  padding-left: 10px;
+}
+
+.inputS:first-child {
+  margin-right: 5px;
+}
+
+.inputL {
+  width: 100%;
+  height: 50px;
+  padding-left: 10px;
+}
+
+.textArea {
+  width: 100%;
+  padding-left: 10px;
+}
+
+.button {
+  margin-top: 20px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(0, 82, 0);
+  color: white;
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+
+  .form {
+    width: 100%;
+  }
+
+  .inputS:first-child {
+    margin: 0;
+  }
+}
